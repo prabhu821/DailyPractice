@@ -1,5 +1,6 @@
 ﻿using DailyPracticeProblem.MethodOverloading;
 using DailyPracticeProblem.CollectionDemo;
+using DailyPracticeProblem.MethodOverriding;
 
 namespace DailyPracticeProblem
 {
@@ -18,12 +19,17 @@ namespace DailyPracticeProblem
             //Console.WriteLine("sum of the three "
             //                  + "double value : " + doubleSum);
 
-            Collection collection = new Collection();
-            Collection.List();
-            Collection.Queue();
-            Collection.Dictinory();
-            Collection.Stack();
-            Collection.Set();
+            //Collection collection = new Collection();
+            //Collection.List();
+            //Collection.Queue();
+            //Collection.Dictinory();
+            //Collection.Stack();
+            //Collection.Set();
+
+            DerivedClass d1 = new DerivedClass();
+            DerivedClass d2 = new DerivedClass(10, 20);
+            d2.swap();
+
         }
     }
 }
